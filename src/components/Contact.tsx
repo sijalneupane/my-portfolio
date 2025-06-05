@@ -55,7 +55,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourprofile",
+      url: "https://www.linkedin.com/in/sijal-neupane-23302a347/",
       color: "hover:text-blue-600"
     },
     {
