@@ -1,73 +1,48 @@
 # Welcome to your Lovable project
+# Sijal Neupane — Portfolio 💻🚀
 
-## Project info
+Welcome to my personal developer portfolio! This website showcases my projects, skills, and experience as a passionate Flutter and web developer.
 
-**URL**: https://lovable.dev/projects/316ca190-1a64-443b-8fce-b40737f3d1c5
+🌐 **Live Site**: [https://sijalneupane.com.np](https://sijalneupane.com.np)  
+📁 **Hosted on**: GitHub Pages  
+🛠️ **Built With**: React, TypeScript, Tailwind CSS, Vite
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧰 Tech Stack
 
-**Use Lovable**
+- ⚛️ **React** — UI Library
+- 🧠 **TypeScript** — Typed JavaScript
+- 💨 **Tailwind CSS** — Utility-first styling
+- 🎨 **shadcn/ui** — UI component library
+- ⚡ **Vite** — Lightning-fast build tool
+- 🌍 **GitHub Pages** — Deployment platform
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/316ca190-1a64-443b-8fce-b40737f3d1c5) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 👨‍💻 About Me
 
-**Use your preferred IDE**
+I'm **Sijal Neupane**, a Flutter and full-stack developer who loves building beautiful and performant mobile and web apps. I'm currently pursuing a BCA degree at NIST College, Banepa, and have experience working with modern frameworks like Flutter, Django REST Framework, and React.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 🎓 **Education**: BCA Student, NIST College, Banepa  
+- 💼 **Experience**: Flutter Developer at ABC Company (2024–2025)  
+- 🛠️ **Skills**: Flutter, Dart, Django, React, REST APIs, Firebase
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📁 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+📦 portfolio/
+├── public/             # Static files (favicons, images, etc.)
+├── src/
+│   ├── assets/         # Custom images and icons
+│   ├── components/     # Reusable components (Navbar, Footer, etc.)
+│   ├── pages/          # Main pages (Home, Projects, About, Contact)
+│   ├── App.tsx         # Main app component
+│   └── main.tsx        # App entry point
+├── tailwind.config.ts  # Tailwind configuration
+├── index.html          # Root HTML template
+├── vite.config.ts      # Vite configuration
+└── README.md           # You are here!
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/316ca190-1a64-443b-8fce-b40737f3d1c5) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
