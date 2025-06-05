@@ -1,5 +1,5 @@
 
-import { Mail, MapPin, Phone, Send, Github, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, Github, Linkedin, X } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -27,20 +27,21 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "your@email.com",
-      link: "mailto:your@email.com"
+      value: "sijalneupane5@gmail.com",
+      link: "mailto:sijalneupane5@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+977 9863022844",
+      link: "tel:+9779863022844"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Location",
-      value: "Your City, Country",
-      link: "#"
+      title: "Banepa",
+      value: "Banepa, Kavrepalanchwok, Nepal",
+      link: "https://www.google.com/maps/place/Banepa,+Kavrepalanchwok,+Nepal"
+
     }
   ];
 
@@ -48,7 +49,7 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/sijalneupane",
       color: "hover:text-gray-800 dark:hover:text-white"
     },
     {
@@ -58,9 +59,9 @@ const Contact = () => {
       color: "hover:text-blue-600"
     },
     {
-      icon: <Mail className="w-6 h-6" />,
-      name: "Email",
-      url: "mailto:your@email.com",
+      icon: <X className="w-6 h-6" />,
+      name: "X",
+      url: "https://x.com/_sijalneupane",
       color: "hover:text-red-500"
     }
   ];
@@ -77,21 +78,22 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-12">
           {/* Contact Information */}
           <div className="animate-fade-in">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-8">
               Get in Touch
             </h3>
             
-            <div className="space-y-6 mb-8">
+            <div className=" mb-8 grid grid-cols-3 sm:grid-cols-3  gap-6">
               {contactInfo.map((info, index) => (
                 <a
                   key={info.title}
                   href={info.link}
                   className="flex items-center p-4 bg-white dark:bg-gray-900 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105"
+                  target='_blank'
                 >
-                  <div className="p-3 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg text-white mr-4">
+                  <div className="p-3 bg-gradient-to-br from-blue-800 to-purple-200 rounded-lg text-white mr-4">
                     {info.icon}
                   </div>
                   <div>
@@ -114,6 +116,7 @@ const Contact = () => {
                     href={social.url}
                     className={`p-3 bg-white dark:bg-gray-900 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:scale-110 text-gray-600 dark:text-gray-400 ${social.color}`}
                     aria-label={social.name}
+                    target='_blank'
                   >
                     {social.icon}
                   </a>
@@ -123,7 +126,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          {/* <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
                 Send a Message
@@ -199,7 +202,7 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

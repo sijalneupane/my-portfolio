@@ -5,13 +5,13 @@ const Projects = () => {
   const projects = [
     {
       title: "Online Election System",
-      description: "A comprehensive web-based voting platform with secure authentication, email verification, and real-time results. Features admin dashboard for election management and voter verification.",
+      description: "A comprehensive web-based voting platform with secure authentication, email verification, and secured and efficient results. Features admin dashboard for election management and voter verification.",
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "PHPMailer", "Abstract API"],
       category: "Web Application",
       icon: <Globe className="w-6 h-6" />,
       hasLiveDemo: true,
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://sjnp.tech",
+      githubUrl: "https://github.com/sijalneupane/Digital_Matadan_Pranali-Online_Election_System.git",
       features: [
         "Email address verification via Abstract API",
         "Secure voting mechanism",
@@ -22,18 +22,18 @@ const Projects = () => {
       gradient: "from-blue-500 to-cyan-500"
     },
     {
-      title: "School Management System",
-      description: "Full-stack mobile application for educational institutions with assignment management, push notifications, and note-taking capabilities. Built with modern architecture and scalable backend.",
+      title: "Assignment Management System",
+      description: "Full-stack mobile application for educational institutions with assignment management, push notifications, and notic-spreading capabilities. Built to enhance student-teacher interaction and streamline school operations.",
       tech: ["Flutter", "Provider", "Django", "DRF", "PostgreSQL", "FCM"],
       category: "Mobile Application",
       icon: <Smartphone className="w-6 h-6" />,
       hasLiveDemo: false,
-      githubUrl: "#",
+      githubUrl: "https://github.com/sijalneupane/assignment_provider_app.git",
       features: [
         "Assignment CRUD operations",
         "Push notifications via FCM",
         "Notes management system",
-        "Student-teacher interaction",
+        "Student-teacher information sharing",
         "Real-time updates"
       ],
       gradient: "from-green-500 to-emerald-500"
@@ -45,7 +45,7 @@ const Projects = () => {
       category: "Mobile Application",
       icon: <Smartphone className="w-6 h-6" />,
       hasLiveDemo: false,
-      githubUrl: "#",
+      githubUrl: "https://github.com/sijalneupane/car_rental_system.git",
       features: [
         "Multiple authentication methods",
         "Image upload via Cloudinary",
@@ -127,6 +127,7 @@ const Projects = () => {
                     <a
                       href={project.liveUrl}
                       className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 text-sm font-medium flex-1 justify-center"
+                      target='_blank'
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
@@ -136,6 +137,7 @@ const Projects = () => {
                   <a
                     href={project.githubUrl}
                     className={`flex items-center gap-2 px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-500 transition-all duration-300 text-sm font-medium ${project.hasLiveDemo ? '' : 'flex-1'} justify-center`}
+                    target='_blank'
                   >
                     <Github className="w-4 h-4" />
                     GitHub

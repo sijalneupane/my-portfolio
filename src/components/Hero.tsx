@@ -1,10 +1,12 @@
 
 import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react';
-
+import cv from '../assets/pdfs/cv.pdf';
+import snlogo from '../assets/images/SN Logo1.png';
+import person1 from '../assets/images/person1.jpeg';
 const Hero = () => {
   const handleResumeView = () => {
     // This would open a resume PDF or navigate to a resume page
-    window.open('/resume.pdf', '_blank');
+    window.open(cv, '_blank');
   };
 
   return (
@@ -20,7 +22,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mb-8 inline-block">
             <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-2xl">
-              YN
+              <img src={person1} alt="Profile" className="w-full h-full rounded-full object-cover " />
             </div>
           </div>
           
@@ -34,15 +36,15 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium">
+            <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium">
               Flutter Developer
             </span>
             <span className="px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-sm font-medium">
-              Django Expert
+              Django & DjangoRestFramework (DRF)
             </span>
-            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-sm font-medium">
+            {/* <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-sm font-medium">
               Full Stack
-            </span>
+            </span> */}
           </div>
           
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.9s' }}>
@@ -55,18 +57,20 @@ const Hero = () => {
             </button>
             
             <a
-              href="https://github.com"
-              className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-500 transition-all duration-300 hover:scale-105"
+              href="https://github.com/sijalneupane"
+              target="_blank"
+              className="flex items-center gap-2 px-6 py-3  bg-black text-white border-2 border-black dark:border-gray-600 dark:bg-black dark:text-white rounded-lg  transition-all duration-300 hover:scale-105"
             >
               <Github className="w-4 h-4" />
               GitHub
             </a>
             
             <a
-              href="mailto:your@email.com"
+              href="mailto:sijalneupane5@gmail.com"
+              target="_blank"
               className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-500 transition-all duration-300 hover:scale-105"
             >
-              <Mail className="w-4 h-4" />
+              <Mail  className="w-4 h-4" />
               Contact
             </a>
           </div>

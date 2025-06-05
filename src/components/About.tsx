@@ -5,23 +5,23 @@ const About = () => {
   const highlights = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Full Stack Development",
-      description: "Expertise in both mobile and web technologies, creating end-to-end solutions."
+      title: "Full Stack Development(Flutter & Django)",
+      description: "I build both mobile and web apps from start to finish."
     },
     {
       icon: <Rocket className="w-6 h-6" />,
       title: "Modern Technologies",
-      description: "Always learning and implementing the latest frameworks and best practices."
+      description: "I use the latest tools and keep learning new things."
     },
     {
       icon: <Heart className="w-6 h-6" />,
       title: "User-Centric Design",
-      description: "Focused on creating intuitive and engaging user experiences."
+      description: "I make apps that are easy and fun to use."
     },
     {
       icon: <Coffee className="w-6 h-6" />,
       title: "Problem Solver",
-      description: "Passionate about tackling complex challenges with innovative solutions."
+      description: "I enjoy finding simple solutions to tough problems."
     }
   ];
 
@@ -57,12 +57,12 @@ const About = () => {
 
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">3+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">3+ </div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed along with other simple apps</div>
                 </div>
                 <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                   <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">10+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Technologies Mastered</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Software technologies learned</div>
                 </div>
               </div>
             </div>

@@ -26,7 +26,7 @@ const Skills = () => {
       icon: <Database className="w-8 h-8" />,
       title: "Database & Storage",
       skills: [
-        { name: "PostgreSQL", level: "Advanced" },
+        { name: "PostgreSQL" },
         { name: "MySQL", level: "Intermediate" },
         { name: "Firestore", level: "Advanced" }
       ]
@@ -58,10 +58,10 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Technical Expertise
+            Technical Skills
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Leveraging modern technologies to build robust, scalable applications
+            Applying modern technologies to build robust, scalable applications
           </p>
         </div>
 
@@ -87,9 +87,9 @@ const Skills = () => {
                     <span className="text-gray-700 dark:text-gray-300 font-medium">
                       {skill.name}
                     </span>
-                    <span className="text-xs text-gray-500 dark:text-gray-400 px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-full border border-blue-200 dark:border-blue-700">
+                    {/* <span className="text-xs text-gray-500 dark:text-gray-400 px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-full border border-blue-200 dark:border-blue-700">
                       {skill.level}
-                    </span>
+                    </span> */}
                   </div>
                 ))}
               </div>

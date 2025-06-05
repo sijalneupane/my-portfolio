@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X, Home, User, Code, Briefcase, Mail, Moon, Sun } from 'lucide-react';
+import snlogo from '../assets/images/SN Logo1.png'; // Assuming you have a logo image
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,11 +69,19 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
-              YN
-            </div>
+            <a href="#home" className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center" aria-label="Sijal Neupane Home">
+              <img
+                src={snlogo}
+                alt="Sijal Neupane Logo"
+                className="w-full h-full object-contain"
+                width={32}
+                height={32}
+                loading="eager"
+                decoding="async"
+              />
+            </a>
             <span className="ml-2 text-xl font-bold text-gray-800 dark:text-white">
-              Portfolio
+              Sijal Neupane
             </span>
           </div>
 
