@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+
 # Sijal Neupane — Portfolio 💻🚀
 
 Welcome to my personal developer portfolio! This website showcases my projects, skills, and experience as a passionate Flutter and web developer.
