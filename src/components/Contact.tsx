@@ -85,7 +85,7 @@ const Contact = () => {
               Get in Touch
             </h3>
             
-            <div className=" mb-8 grid grid-cols-3 sm:grid-cols-3  gap-6">
+            <div className=" mb-8 grid grid-cols-1 lg:grid-cols-3  gap-6">
               {contactInfo.map((info, index) => (
                 <a
                   key={info.title}
