@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <h1 className="text-3xl md:text-5xl font-bold pb-2 mb-7 leading-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight p-1 mb-7 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
            Flutter, Nest JS & Django Developer
           </h1>
           
