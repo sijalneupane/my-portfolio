@@ -26,13 +26,15 @@ const Hero = () => {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
-            Full Stack Developer
+          <h1 className="text-3xl md:text-5xl font-bold pb-2 mb-7 leading-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
+           Flutter, Nest JS & Django Developer
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Crafting seamless mobile and web experiences with <span className="text-blue-600 dark:text-blue-400 font-semibold">Flutter</span>, 
-            <span className="text-green-600 dark:text-green-400 font-semibold"> Django</span>, and modern technologies
+            Crafting seamless mobile experiences with <span className="text-blue-600 dark:text-blue-400 font-semibold">Flutter</span>, efficient backend solutions with
+            <span className="text-green-600 dark:text-green-400 font-semibold"> Django and DjangoRestFramework (DRF)</span>, along with scalable APIs using
+            <span className="text-orange-600 dark:text-orange-400 font-semibold"> Nest JS </span>
+            and modern technologies
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
@@ -42,9 +44,9 @@ const Hero = () => {
             <span className="px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-sm font-medium">
               Django & DjangoRestFramework (DRF)
             </span>
-            {/* <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-sm font-medium">
-              Full Stack
-            </span> */}
+            <span className="px-4 py-2 bg-orange-100 dark:bg-orange-900/20 text-orange-800 dark:text-orange-300 rounded-full text-sm font-medium">
+             Nest JS Developer
+            </span>
           </div>
           
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.9s' }}>
@@ -66,8 +68,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="mailto:sijalneupane5@gmail.com"
-              target="_blank"
+              href="#contact"
               className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-500 transition-all duration-300 hover:scale-105"
             >
               <Mail  className="w-4 h-4" />
