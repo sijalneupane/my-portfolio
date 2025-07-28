@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Code, Briefcase, Mail, Moon, Sun } from 'lucide-react';
+import { Menu, X, Home, User, Code, Briefcase, Mail, Moon, Sun, LucidePersonStanding, BookOpen } from 'lucide-react';
 import snlogo from '../assets/images/SN Logo1.png'; // Assuming you have a logo image
 
 const Navigation = () => {
@@ -9,11 +9,13 @@ const Navigation = () => {
   const [isDark, setIsDark] = useState(false);
 
   const navigationItems = [
-    { id: 'home', label: 'Home', icon: <Home className="w-4 h-4" /> },
-    { id: 'about', label: 'About', icon: <User className="w-4 h-4" /> },
-    { id: 'skills', label: 'Skills', icon: <Code className="w-4 h-4" /> },
-    { id: 'projects', label: 'Projects', icon: <Briefcase className="w-4 h-4" /> },
-    { id: 'contact', label: 'Contact', icon: <Mail className="w-4 h-4" /> }
+    { id: 'home', label: 'Home', icon: <Home className="w-3 h-4" /> },
+    { id: 'about', label: 'About', icon: <User className="w-3 h-4" /> },
+    { id: 'skills', label: 'Skills', icon: <Code className="w-3 h-4" /> },
+    { id: 'projects', label: 'Projects', icon: <Briefcase className="w-3 h-4" /> },
+    { id: 'blog', label: 'Blogs', icon: <BookOpen className="w-3 h-4" /> },
+    { id: 'hobbies', label: 'Hobbies', icon: <LucidePersonStanding className="w-3 h-4" /> },
+    { id: 'contact', label: 'Contact', icon: <Mail className="w-3 h-4" /> }
   ];
 
   useEffect(() => {
@@ -86,12 +88,12 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-7">
             {navigationItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-all duration-300 ${
+                className={`flex items-center space-x-1 px-1 py-2 rounded-lg transition-all duration-300 ${
                   activeSection === item.id
                     ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20'
                     : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
