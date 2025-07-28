@@ -4,9 +4,19 @@ import { Code, Coffee, Rocket, Heart } from 'lucide-react';
 const About = () => {
   const highlights = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Full Stack Development(Flutter & Django)",
-      description: "I build both mobile and web apps from start to finish."
+      icon: <Code className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Flutter (Mobile)",
+      description: "Cross-platform mobile apps with beautiful UIs."
+    },
+    {
+      icon: <Code className="w-6 h-6 text-green-600 dark:text-green-400" />,
+      title: "Django & DRF (Backend)",
+      description: "Robust backend solutions and powerful RESTful APIs for scalable web apps."
+    },
+    {
+      icon: <Code className="w-6 h-6 text-orange-600 dark:text-orange-400" />,
+      title: "NestJS (Server-side)",
+      description: "Scalable and efficient server-side applications."
     },
     {
       icon: <Rocket className="w-6 h-6" />,
@@ -39,8 +49,10 @@ const About = () => {
               <div className="space-y-4 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                 <p>
                   I'm a passionate full-stack developer with expertise in both mobile and web technologies. 
-                  My journey in software development has led me to specialize in <span className="text-blue-600 dark:text-blue-400 font-semibold">Flutter</span> for 
-                  mobile applications and <span className="text-green-600 dark:text-green-400 font-semibold">Django</span> for robust backend solutions.
+                  My journey in software development has led me to specialize in 
+                  <span className="text-blue-600 dark:text-blue-400 font-semibold"> Flutter</span> for platform independent mobile applications, 
+                  <span className="text-green-600 dark:text-green-400 font-semibold"> Django and Django Rest Framework (DRF)</span> for robust backend solutions, and 
+                  <span className="text-orange-600 dark:text-orange-400 font-semibold"> NestJS</span> for scalable server-side applications.
                 </p>
                 
                 <p>
