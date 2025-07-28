@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github, Smartphone, Globe, Database } from 'lucide-react';
+import { ExternalLink, Github, Smartphone, Globe, Database, Gamepad2 } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -54,6 +54,39 @@ const Projects = () => {
         "Real-time availability"
       ],
       gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "Flutter Chess Game",
+      description: "Classic chess game implementation with intuitive touch controls, move validation, and elegant UI design. Features complete chess rule enforcement, move history tracking, and responsive gameplay for chess enthusiasts.",
+      tech: ["Flutter", "Dart", "Custom Widgets","Moves Validation"],
+      category: "Mobile Game",
+      icon: <Gamepad2 className="w-6 h-6" />,
+      hasLiveDemo: false,
+      githubUrl: "https://github.com/sijalneupane/chess-game.git",
+      features: [
+        "Complete chess rule implementation",
+        "Touch-based piece movement",
+        "Move validation and legal moves highlighting",
+        "Clean and intuitive UI design"
+      ],
+      gradient: "from-amber-500 to-orange-500"
+    },
+    {
+      title: "Flutter Snake Game",
+      description: "Modern take on the classic Snake game with smooth animations, score tracking, and responsive controls. Built with Flutter's game development capabilities featuring collision detection and play and pause functionality.",
+      tech: ["Flutter", "Dart", "Animation Controller", "Custom Painter", "Game Loop"],
+      category: "Mobile Game",
+      icon: <Gamepad2 className="w-6 h-6" />,
+      hasLiveDemo: false,
+      githubUrl: "https://github.com/sijalneupane/snake-game.git",
+      features: [
+        "Smooth snake movement and animations",
+        "Random food generation",
+        "Collision detection system",
+        "Score tracking",
+        "Responsive touch and swipe controls"
+      ],
+      gradient: "from-red-500 to-rose-500"
     }
   ];
 
@@ -73,7 +106,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in"
+              className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in flex flex-col h-full"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Project Header */}
@@ -85,15 +118,13 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
                   {project.title}
                 </h3>
-                
                 <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>
-
                 {/* Features */}
                 <div className="mb-4">
                   <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Key Features:</h4>
@@ -106,7 +137,6 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
-
                 {/* Tech Stack */}
                 <div className="mb-6">
                   <div className="flex flex-wrap gap-2">
@@ -120,9 +150,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* Action Buttons */}
-                <div className="flex gap-3">
+                <div className="mt-auto flex gap-3 pt-2">
                   {project.hasLiveDemo && (
                     <a
                       href={project.liveUrl}
@@ -133,7 +161,6 @@ const Projects = () => {
                       Live Demo
                     </a>
                   )}
-                  
                   <a
                     href={project.githubUrl}
                     className={`flex items-center gap-2 px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-500 transition-all duration-300 text-sm font-medium ${project.hasLiveDemo ? '' : 'flex-1'} justify-center`}
