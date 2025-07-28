@@ -1,5 +1,4 @@
-
-import { Code, Database, Cloud, Smartphone, Globe, Shield } from 'lucide-react';
+import { Code, Database, Cloud, Smartphone, Globe, Shield } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -9,8 +8,9 @@ const Skills = () => {
       skills: [
         { name: "Flutter", level: "Advanced" },
         { name: "Provider State Management", level: "Intermediate" },
-        { name: "Firebase Integration", level: "Advanced" }
-      ]
+        { name: "Firebase Integration", level: "Advanced" },
+        { name: "RESTful APIs integration", level: "Advanced" },
+      ],
     },
     {
       icon: <Globe className="w-8 h-8" />,
@@ -18,9 +18,10 @@ const Skills = () => {
       skills: [
         { name: "Django", level: "Advanced" },
         { name: "Django REST Framework", level: "Advanced" },
+        { name: "NestJS", level: "Intermediate" },
         { name: "HTML/CSS/JavaScript", level: "Intermediate" },
-        { name: "PHP", level: "Intermediate" }
-      ]
+        { name: "PHP", level: "Intermediate" },
+      ],
     },
     {
       icon: <Database className="w-8 h-8" />,
@@ -28,8 +29,8 @@ const Skills = () => {
       skills: [
         { name: "PostgreSQL" },
         { name: "MySQL", level: "Intermediate" },
-        { name: "Firestore", level: "Advanced" }
-      ]
+        { name: "Firestore", level: "Advanced" },
+      ],
     },
     {
       icon: <Shield className="w-8 h-8" />,
@@ -38,8 +39,8 @@ const Skills = () => {
         { name: "JWT Tokens", level: "Advanced" },
         { name: "Google Authentication", level: "Advanced" },
         { name: "Firebase Auth", level: "Advanced" },
-        { name: "Phone & Email OTP", level: "Intermediate" }
-      ]
+        { name: "Phone & Email OTP", level: "Intermediate" },
+      ],
     },
     {
       icon: <Cloud className="w-8 h-8" />,
@@ -48,9 +49,9 @@ const Skills = () => {
         { name: "Firebase", level: "Advanced" },
         { name: "FCM Push Notifications", level: "Advanced" },
         { name: "Cloudinary", level: "Intermediate" },
-        { name: "Email Services", level: "Intermediate" }
-      ]
-    }
+        { name: "Email Services", level: "Intermediate" },
+      ],
+    },
   ];
 
   return (
@@ -83,7 +84,10 @@ const Skills = () => {
 
               <div className="space-y-3">
                 {category.skills.map((skill) => (
-                  <div key={skill.name} className="flex justify-between items-center">
+                  <div
+                    key={skill.name}
+                    className="flex justify-between items-center"
+                  >
                     <span className="text-gray-700 dark:text-gray-300 font-medium">
                       {skill.name}
                     </span>
