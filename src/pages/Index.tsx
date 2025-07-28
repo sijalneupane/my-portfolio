@@ -8,6 +8,7 @@ import { Github, Linkedin, Mail, Phone, MapPin, Calendar } from "lucide-react";
 import cv from "../assets/pdfs/cv.pdf";
 import MyHobbies from "@/components/MyHobbies";
 import snlogo from "../assets/images/SN Logo1.png"; // Assuming you have a logo image
+import Blog from "@/components/Blog";
 
 const Index = () => {
   const currentYear = new Date().getFullYear();
@@ -31,6 +32,11 @@ const Index = () => {
         <Projects />
       </div>
       
+      {/* Blog Section */}
+      <div>
+        <Blog />
+      </div>
+
       {/* Hobbies Section */}
       <div>
         <MyHobbies />
