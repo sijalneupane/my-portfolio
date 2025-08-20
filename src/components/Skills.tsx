@@ -44,12 +44,13 @@ const Skills = () => {
     },
     {
       icon: <Cloud className="w-8 h-8" />,
-      title: "Cloud & Services",
+      title: "Cloud, Services & Tools",
       skills: [
         { name: "Firebase", level: "Advanced" },
         { name: "FCM Push Notifications", level: "Advanced" },
         { name: "Cloudinary", level: "Intermediate" },
         { name: "Email Services", level: "Intermediate" },
+        { name: "Docker", level: "Intermediate" },
       ],
     },
   ];
