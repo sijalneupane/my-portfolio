@@ -18,6 +18,7 @@ const Skills = () => {
       skills: [
         { name: "Django", level: "Advanced" },
         { name: "Django REST Framework", level: "Advanced" },
+        { name: "FastAPI", level: "Advanced" },
         { name: "NestJS", level: "Intermediate" },
         { name: "HTML/CSS/JavaScript", level: "Intermediate" },
         { name: "PHP", level: "Intermediate" },
@@ -28,6 +29,7 @@ const Skills = () => {
       title: "Database & Storage",
       skills: [
         { name: "PostgreSQL" },
+        { name: "Async PostgreSQL", level: "Advanced" },
         { name: "MySQL", level: "Intermediate" },
         { name: "Firestore", level: "Advanced" },
       ],
@@ -36,7 +38,8 @@ const Skills = () => {
       icon: <Shield className="w-8 h-8" />,
       title: "Authentication & Security",
       skills: [
-        { name: "JWT Tokens", level: "Advanced" },
+        { name: "JWT Authentication", level: "Advanced" },
+        { name: "FastAPI JWT Auth", level: "Advanced" },
         { name: "Google Authentication", level: "Advanced" },
         { name: "Firebase Auth", level: "Advanced" },
         { name: "Phone & Email OTP", level: "Intermediate" },

@@ -10,8 +10,8 @@ const About = () => {
     },
     {
       icon: <Code className="w-6 h-6 text-green-600 dark:text-green-400" />,
-      title: "Django & DRF (Backend)",
-      description: "Robust backend solutions and powerful RESTful APIs for scalable web apps."
+      title: "Django, DRF & FastAPI",
+      description: "Robust backend solutions with Django/DRF and high-performance async APIs with FastAPI."
     },
     {
       icon: <Code className="w-6 h-6 text-orange-600 dark:text-orange-400" />,
@@ -51,12 +51,12 @@ const About = () => {
                   I'm a passionate full-stack developer with expertise in both mobile and web technologies. 
                   My journey in software development has led me to specialize in 
                   <span className="text-blue-600 dark:text-blue-400 font-semibold"> Flutter</span> for platform independent mobile applications, 
-                  <span className="text-green-600 dark:text-green-400 font-semibold"> Django and Django Rest Framework (DRF)</span> for robust backend solutions, and 
+                  <span className="text-green-600 dark:text-green-400 font-semibold"> Django/DRF and FastAPI</span> for robust backend solutions with JWT authentication, and 
                   <span className="text-orange-600 dark:text-orange-400 font-semibold"> NestJS</span> for scalable server-side applications.
                 </p>
                 
                 <p>
-                  With hands-on experience in modern authentication systems, cloud services, and database management, 
+                  With hands-on experience in modern JWT authentication systems, async PostgreSQL connections, cloud services, and database management, 
                   I create seamless digital experiences that prioritize both functionality and user satisfaction.
                 </p>
                 
