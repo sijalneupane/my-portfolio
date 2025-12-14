@@ -10,6 +10,8 @@ const Skills = () => {
         { name: "Provider State Management", level: "Intermediate" },
         { name: "Firebase Integration", level: "Advanced" },
         { name: "RESTful APIs integration", level: "Advanced" },
+        { name: "Clean Architecture (data, domain and feature layers)", level: "Intermediate" },
+        { name: "Dependency Injection (GetIt)", level: "Intermediate" },
       ],
     },
     {
