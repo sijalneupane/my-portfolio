@@ -10,11 +10,24 @@ const Blog = () => {
       tags: ["Flutter", "Game Development", "Mobile", "Dart"],
       url: "https://medium.com/@sijalneupane5/build-a-simple-snake-game-in-flutter-a-step-by-step-guide-0718168abe56",
       platform: "Medium",
+      featured: false,
+      category: "Tutorial"
+    },
+    {
+      title: "Flutter Monorepo from Scratch (2025) going into 2026: Pub Workspaces + Melos Explained Properly",
+      excerpt: "Discover how to set up a Flutter monorepo using Pub Workspaces and Melos. This article provides a clear explanation of the benefits, setup process, and best practices for managing multiple Flutter packages in a single repository.",
+      date: "2025-12-28",
+      readTime: "4 min read",
+      tags: ["Flutter", "Monorepo", "Melos", "Pub Workspaces"],
+      url: "https://medium.com/@sijalneupane5/flutter-monorepo-from-scratch-2025-going-into-2026-pub-workspaces-melos-explained-properly-fae98bfc8a6e",
+      platform: "Medium",
       featured: true,
       category: "Tutorial"
     },
     // You can add more blog posts here in the future
   ];
+  blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  blogPosts.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
   const formatDate = (dateString: string) => {
     const options = { year: 'numeric' as const, month: 'long' as const, day: 'numeric' as const };

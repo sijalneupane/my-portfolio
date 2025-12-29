@@ -1,11 +1,13 @@
 import { Github, Linkedin, Mail, Download, ExternalLink } from "lucide-react";
-import cv from "../assets/pdfs/cv.pdf";
+import flutter_cv from "../assets/pdfs/cv.pdf";
+import nestjs_cv from "../assets/pdfs/cv.pdf";
+
 // import snlogo from '../assets/images/SN Logo1.png';
 import sijal from "../assets/images/sijal.jpg";
 const Hero = () => {
   const handleResumeView = () => {
     // This would open a resume PDF or navigate to a resume page
-    window.open(cv, "_blank");
+    window.open(flutter_cv, "_blank");
   };
 
   return (
