@@ -36,4 +36,4 @@ User-agent: DotBot
 Disallow: /
 
 # Sitemap location
-Sitemap: https://sijalneupane.tech/sitemap.xml
+Sitemap: https://sijalneupane.com.np/sitemap.xml

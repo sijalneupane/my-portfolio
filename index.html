@@ -26,8 +26,7 @@
     <meta name="geo.placename" content="Nepal" />
     <meta name="rating" content="general" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
-    <!-- Canonical URL will be set dynamically based on domain -->
-    <link rel="canonical" href="https://sijalneupane.tech" />
+    <link rel="canonical" href="https://sijalneupane.com.np" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:locale" content="en_US" />
@@ -40,7 +39,7 @@
       content="Expert Full Stack Developer specializing in Flutter mobile apps, Django/FastAPI backends with JWT auth, NestJS APIs, and React frontends. View my portfolio and projects."
     />
     <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://sijalneupane.tech" />
+    <meta property="og:url" content="https://sijalneupane.com.np" />
     <meta
       property="og:image"
       content="https://res.cloudinary.com/ddb1esok3/image/upload/sizz_ktcwvm.png"
@@ -75,17 +74,17 @@
       name="twitter:description"
       content="Expert Full Stack Developer specializing in Flutter mobile apps, Django/FastAPI backends, NestJS APIs, and React frontends. View my portfolio and projects."
     />
-    <meta name="twitter:url" content="https://sijalneupane.tech" />
-    <meta name="twitter:domain" content="sijalneupane.tech" />
+    <meta name="twitter:url" content="https://sijalneupane.com.np" />
+    <meta name="twitter:domain" content="sijalneupane.com.np" />
 
-    <!-- Structured Data for SEO - Will be updated dynamically by React SEOHead component -->
-    <script type="application/ld+json" data-type="person">
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Sijal Neupane",
         "alternateName": "Sijal",
-        "url": "https://sijalneupane.tech",
+        "url": "https://sijalneupane.com.np",
         "image": {
           "@type": "ImageObject",
           "url": "https://res.cloudinary.com/ddb1esok3/image/upload/sizz_ktcwvm.png",
@@ -126,17 +125,17 @@
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://sijalneupane.tech"
+          "@id": "https://sijalneupane.com.np"
         }
       }
     </script>
-    <script type="application/ld+json" data-type="website">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Sijal Neupane Portfolio",
         "alternateName": "Sijal Neupane - Full Stack Developer",
-        "url": "https://sijalneupane.tech",
+        "url": "https://sijalneupane.com.np",
         "description": "Portfolio website of Sijal Neupane, showcasing Full Stack Development projects and skills",
         "inLanguage": "en-US",
         "author": {
@@ -170,76 +169,6 @@
         scroll-behavior: smooth;
       }
     </style>
-    <!-- Domain Detection and SEO Setup Script -->
-    <script>
-      (function() {
-        const hostname = window.location.hostname;
-        const isDomainNP = hostname.includes('sijalneupane.com.np') || hostname.includes('localhost');
-        
-        const seoData = {
-          tech: {
-            canonicalUrl: 'https://sijalneupane.tech',
-            ogUrl: 'https://sijalneupane.tech',
-            twitterDomain: 'sijalneupane.tech',
-            personUrl: 'https://sijalneupane.tech',
-            websiteUrl: 'https://sijalneupane.tech',
-          },
-          np: {
-            canonicalUrl: 'https://www.sijalneupane.com.np',
-            ogUrl: 'https://www.sijalneupane.com.np',
-            twitterDomain: 'sijalneupane.com.np',
-            personUrl: 'https://www.sijalneupane.com.np',
-            websiteUrl: 'https://www.sijalneupane.com.np',
-          },
-        };
-        
-        const config = isDomainNP ? seoData.np : seoData.tech;
-        
-        // Update canonical link
-        const canonicalLink = document.querySelector('link[rel="canonical"]');
-        if (canonicalLink) {
-          canonicalLink.href = config.canonicalUrl;
-        }
-        
-        // Update OG URLs
-        const ogUrl = document.querySelector('meta[property="og:url"]');
-        if (ogUrl) ogUrl.content = config.ogUrl;
-        
-        const twitterUrl = document.querySelector('meta[name="twitter:url"]');
-        if (twitterUrl) twitterUrl.content = config.ogUrl;
-        
-        const twitterDomain = document.querySelector('meta[name="twitter:domain"]');
-        if (twitterDomain) twitterDomain.content = config.twitterDomain;
-        
-        // Update structured data - Person schema
-        const personScript = document.querySelector('script[type="application/ld+json"][data-type="person"]');
-        if (personScript) {
-          try {
-            const personData = JSON.parse(personScript.textContent);
-            personData.url = config.personUrl;
-            personData.mainEntityOfPage['@id'] = config.personUrl;
-            personScript.textContent = JSON.stringify(personData);
-          } catch (e) {
-            console.warn('Could not update Person schema:', e);
-          }
-        }
-        
-        // Update structured data - Website schema
-        const websiteScript = document.querySelector('script[type="application/ld+json"][data-type="website"]');
-        if (websiteScript) {
-          try {
-            const websiteData = JSON.parse(websiteScript.textContent);
-            websiteData.url = config.websiteUrl;
-            websiteScript.textContent = JSON.stringify(websiteData);
-          } catch (e) {
-            console.warn('Could not update Website schema:', e);
-          }
-        }
-        
-        // Store domain info for React component
-        window.__SEO_DOMAIN__ = isDomainNP ? 'np' : 'tech';
-      })();
-    </script>
   </head>
 
   <body>
